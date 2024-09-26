@@ -50,10 +50,12 @@ bool task_1()
     if (!correct_msg_checker(byte_array, BYTE_ARRAY_SIZE))
     {
         std::cout << "Ошибка. Результат равен единице" << std::endl;
+        return false;
     }
     else
     {
         std::cout << "Успех. Результат равен нулю" << std::endl;
+        return true;
     }
-    return true;
+    
 }
